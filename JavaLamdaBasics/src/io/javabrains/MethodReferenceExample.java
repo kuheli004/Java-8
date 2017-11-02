@@ -1,6 +1,6 @@
 package io.javabrains;
 
-public class MethodReferenceExample {
+public class MethodReferenceExample implements Runnable{
   
   
   public static void main(String[] args) {
@@ -12,6 +12,11 @@ public class MethodReferenceExample {
  public static void perform(){
    System.out.println("hello");
  }
+@Override
+public void run() {
+  System.out.println("world");
+  
+}
    
    
 
